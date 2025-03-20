@@ -16,3 +16,8 @@ EMPLOYEE_HOURS.forEach((hours, day) => {
 // a. Calculate Total Wage
 const totalWage = [...empDailyWageMap.values()].reduce((total, wage) => total + wage, 0);
 console.log("Total Employee Wage:", totalWage);
+
+
+// b. Show Day along with Daily Wage using Map helper function
+console.log("Day-wise Daily Wages:");
+empDailyWageMap.forEach((wage, day) => console.log(`Day ${day}: ${wage}`));
